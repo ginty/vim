@@ -21,6 +21,7 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'rust-lang/rust.vim'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -47,7 +48,16 @@ filetype plugin indent on    " required
 
 " ab sfont set guifont=-b&h-lucidatypewriter-medium-r-normal-*-*-140-*-*-m-*-iso8859-15 
 " ab bfont set guifont=-b&h-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-iso8859-15 
-set guifont=LucidaTypewriter\ 12
+" set guifont=LucidaTypewriter\ 12
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
 
 colorscheme ir_black
 set columns=120 lines=50
