@@ -22,6 +22,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
