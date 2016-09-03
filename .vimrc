@@ -24,6 +24,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'fatih/vim-go'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -81,3 +82,10 @@ set spell
 let mapleader = "\\"
 map <Leader>n :NERDTreeToggle<CR> 
 
+if &termencoding !=# 'utf-8' 
+  let NERDTreeDirArrows = 0 
+endif 
+
+"hi clear SpellBad
+"hi SpellBad cterm=underline ctermfg=red
+set noswapfile
