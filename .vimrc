@@ -60,10 +60,10 @@ if has("gui_running")
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
+  set columns=120 lines=50
 endif
 
 colorscheme ir_black
-set columns=120 lines=50
 set guioptions-=T "hide toolbar
 syntax on
 
