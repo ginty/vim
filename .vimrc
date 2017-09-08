@@ -63,6 +63,8 @@ if has("gui_running")
   set columns=120 lines=50
 endif
 
+set encoding=utf-8
+
 colorscheme ir_black
 set guioptions-=T "hide toolbar
 syntax on
