@@ -53,13 +53,7 @@ filetype plugin indent on    " required
 " ab bfont set guifont=-b&h-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-iso8859-15 
 " set guifont=LucidaTypewriter\ 12
 if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ 12
-  elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h14
-  elseif has("gui_win32")
-    set guifont=Consolas:h11:cANSI
-  endif
+  set guifont=Ubuntu\ Mono\ 14,Inconsolata\ 12,Consolas:h11:cANSI
   set columns=120 lines=50
 endif
 
